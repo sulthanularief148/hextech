@@ -104,13 +104,15 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <h3
-          className={`font-bold text-2xl ${
-            scrolled ? "text-gray-800" : "text-white"
-          }`}
-        >
-          HexTech LTD
-        </h3>
+        <div className="hidden sm:block">
+          <h3
+            className={`font-bold text-2xl ${
+              scrolled ? "text-gray-800" : "text-white"
+            }`}
+          >
+            HexTech LTD
+          </h3>
+        </div>
       </div>
     </nav>
   );
