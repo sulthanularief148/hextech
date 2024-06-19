@@ -48,8 +48,14 @@ const Footer = () => {
 
           <div>
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p className="text-gray-600">Email: info@example.com</p>
-            <p className="text-gray-600">Phone: +1 (123) 456-7890</p>
+            <address>
+              <p className="text-gray-600">Email: hextechltd24@gmail.com</p>
+              <p className="text-gray-600">Phone: +1 (123) 456-7890</p>
+
+              <p className="text-gray-600">37, Windsor road Hounslow</p>
+              {/* eslint-disable-next-line no-irregular-whitespace */}
+              <p className="text-gray-600">Tw4 7qj</p>
+            </address>
           </div>
         </div>
       </div>

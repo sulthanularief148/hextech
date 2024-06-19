@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { close, menu } from "../assets";
+import { close, menu, logoWhite,logoBlack } from "../assets";
 import "../App.css";
 
 console.log(navLinks);
@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      } w-full flex items-center h-[75px] py-5 fixed top-0 z-20 ${
         scrolled ? "backdrop-blur " : "bg-transparent"
       }`}
     >
@@ -44,13 +44,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p
-            className={`${
-              scrolled ? "text-gray-800" : "text-gray-800"
-            } sm:hidden text-[18px] font-bold cursor-pointer flex`}
-          >
-            HexTech LTD &nbsp;
-          </p>
+          <img
+            src={scrolled ? logoBlack : logoWhite}
+            width="200px"
+            height="150px"
+            alt="logo"
+            className="object-contain"
+          />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
@@ -102,16 +102,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="hidden sm:block">
-          <h3
-            className={`font-bold text-2xl ${
-              scrolled ? "text-gray-800" : "text-white"
-            }`}
-          >
-            HexTech LTD
-          </h3>
         </div>
       </div>
     </nav>

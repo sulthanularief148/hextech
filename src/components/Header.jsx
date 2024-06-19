@@ -7,7 +7,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <section className={`header-sec relative w-full mx-auto`}>
+    <section className={`header-sec relative w-full mx-auto font-serif `} id="home">
       <div
         style={{
           height: "800px",

@@ -22,14 +22,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_1h34ys4",
+        "template_jurdpdq",
         {
-          name,
-          email,
-          message,
+          to_name: "Hasanal mohamed",
+          from_email: email,
+          from_name: name,
+          to_email: "hextechltd24@gmail.com",
+          message: message,
         },
-        "YOUR_USER_ID" // replace with your user ID
+        "vDj2w1aFk3iyuZD08"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
